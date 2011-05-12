@@ -1,0 +1,2 @@
+PHPMyAdmin bookmarklet:<br />
+<a href="javascript:var a=localStorage.getItem('dba');a&&(a=JSON.parse(a));if(!a||a&&!confirm('Inloggen met '+a.b+' en '+a.a+'?'))a={},a.b=prompt('Username'),a.a=prompt('Paswoord?'),localStorage.setItem('dba',JSON.stringify(a));window.open('https://'+a.b+':'+a.a+'@server.sputnikweb.be:81/phpmyadmin');">PHPMyAdmin bookmarklet</a>
